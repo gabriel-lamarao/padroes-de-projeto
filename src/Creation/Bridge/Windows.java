@@ -3,8 +3,8 @@ package Creation.Bridge;
 public class Windows implements OperatingSystem{
 
     @Override
-    public String getCpu() {
-        return null;
+    public void getCpu() {
+        System.out.println("Nucleos: "+ Runtime.getRuntime().availableProcessors());
     }
 
     @Override

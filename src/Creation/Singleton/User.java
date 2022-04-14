@@ -1,4 +1,4 @@
-package Creation.Singleton.exemplo;
+package Creation.Singleton;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;

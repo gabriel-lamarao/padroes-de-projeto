@@ -3,8 +3,8 @@ package Creation.Bridge;
 public class Linux implements OperatingSystem{
 
     @Override
-    public String getCpu() {
-        return null;
+    public void getCpu() {
+
     }
 
     @Override

@@ -1,7 +1,7 @@
 package Creation.Bridge;
 
 public interface OperatingSystem {
-    public String getCpu();
+    public void getCpu();
     public String getVersion();
     public String getKernelVersion();
 }

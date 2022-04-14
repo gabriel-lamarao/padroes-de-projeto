@@ -1,4 +1,4 @@
-package Creation.Singleton.exemplo;
+package Creation.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;
