@@ -1,10 +1,17 @@
 package Creation.Bridge;
 
+import oshi.SystemInfo;
+import oshi.hardware.CentralProcessor;
+import oshi.hardware.HardwareAbstractionLayer;
+
 public class Windows implements OperatingSystem{
 
     @Override
-    public void getCpu() {
-        System.out.println("Nucleos: "+ Runtime.getRuntime().availableProcessors());
+    public String getCpu() {
+        SystemInfo systemInfo = new SystemInfo();
+        HardwareAbstractionLayer hardware = systemInfo.getHardware();
+        CentralProcessor processor = hardware.getProcessor();
+        return processor.toString();
     }
 
     @Override

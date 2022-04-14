@@ -1,7 +1,9 @@
 package Creation.Bridge;
 
+import java.io.IOException;
+
 public interface OperatingSystem {
-    public void getCpu();
-    public String getVersion();
-    public String getKernelVersion();
+    public String getCpu();
+    public String getVersion() throws IOException;
+    public String getKernelVersion() throws IOException;
 }

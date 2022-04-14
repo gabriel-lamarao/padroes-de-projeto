@@ -26,9 +26,9 @@ public class Log {
     static public String showUsers(){
         StringBuilder sb = new StringBuilder();
         for (User u: users){
-            sb.append(u.getNome() + " ");
+            sb.append(u.getNome() + " -");
         }
-        sb.append(" " + totalUsers);
+        sb.append(" TotalUsers: " + totalUsers);
         return sb.toString();
     }
 
