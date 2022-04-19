@@ -1,14 +1,15 @@
-package Creation.Singleton.exemplo;
+package Creation.Singleton;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
 
 public class User {
-    private final String password;
+    private String password;
     private String nome;
     private String email;
     private Log log;
+
 
     public User(String nome, String email, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         this.nome = nome;
@@ -22,11 +23,11 @@ public class User {
             System.out.println("Email ou senha invalidos!");
         }
         if (Objects.equals(email, this.email) && Objects.equals(this.password, Encryption.encryptPassword(password))) {
-            System.out.println("Login!!");
+            System.out.println(this.nome +" - Login!!");
             log.userLogged(this);
         }
         else{
-            System.out.println("Senha incorreta!");
+            System.out.println(this.nome + " - Senha incorreta!");
         }
     }
 
@@ -44,5 +45,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
