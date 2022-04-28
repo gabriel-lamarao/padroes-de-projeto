@@ -1,15 +1,15 @@
-package Creation.Singleton;
+package creation.singleton;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Log {
     static private Log instance = null;
-    static private List<User> users;
+    static private List<String> loggedUsers;
     static private Integer totalUsers = 0;
 
     private Log(){
-        users = new ArrayList<>();
+        loggedUsers = new ArrayList<>();
     }
 
     static Log startLoggin(){
@@ -18,17 +18,18 @@ public class Log {
         return instance;
     }
 
-    public void userLogged(User user){
-        users.add(user);
+    public void userLogged(String email){
+        loggedUsers.add(email);
         totalUsers++;
     }
 
     static public String showUsers(){
         StringBuilder sb = new StringBuilder();
-        for (User u: users){
-            sb.append(u.getNome() + " -");
+        sb.append("++++++ LOGGED USERS ++++++\n");
+        for (String u: loggedUsers){
+            sb.append(u).append("\n");
         }
-        sb.append(" TotalUsers: " + totalUsers);
+        sb.append(" TotalUsers: ").append(totalUsers);
         return sb.toString();
     }
 

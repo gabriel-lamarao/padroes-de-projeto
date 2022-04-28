@@ -1,4 +1,4 @@
-package Creation.Bridge;
+package creation.bridge;
 
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
