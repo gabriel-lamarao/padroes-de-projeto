@@ -1,7 +1,7 @@
-package creation.singleton;
+package creational.singleton;
 
-import creation.bridge.Mobile;
-import creation.bridge.Pc;
+import creational.bridge.Mobile;
+import creational.bridge.Pc;
 import libs.Util;
 import structural.adapter.EmailValidatorAdaptee;
 

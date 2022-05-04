@@ -1,4 +1,4 @@
-package creation.singleton;
+package creational.singleton;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

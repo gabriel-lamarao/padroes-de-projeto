@@ -1,7 +1,7 @@
-package creation;
+package creational;
 
-import creation.singleton.Log;
-import creation.singleton.User;
+import creational.singleton.Log;
+import creational.singleton.User;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;

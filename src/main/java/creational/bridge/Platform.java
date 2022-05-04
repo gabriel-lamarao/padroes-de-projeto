@@ -1,4 +1,4 @@
-package creation.bridge;
+package creational.bridge;
 
 import java.io.IOException;
 
