@@ -3,24 +3,13 @@ package structural.composite;
 public class Gerente extends Supervisor{
 	public Gerente(String nomeDoSupervisor) {
 		super(nomeDoSupervisor);
-        this.nomeFuncionario = nomeDoSupervisor;
+        this.nome = nomeDoSupervisor;
+        this.cargo = "gerente";
     }
 
 	@Override
     public void printNomeDoFuncionario() {
-        System.out.println(this.nomeFuncionario);
-        for (Funcionario funcionarioTmp : funcionarios) {
-            funcionarioTmp.printNomeDoFuncionario();
-        }
+        System.out.println(this.nome);
     }
-	
-	@Override
-	public void adicionar(Funcionario novoFuncionario) {
-		// TODO Auto-generated method stub
-	}
 
-	@Override
-	protected void remover(Funcionario funcionario) {
-		// TODO Auto-generated method stub
-	}
 }

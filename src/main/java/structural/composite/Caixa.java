@@ -1,23 +1,13 @@
 package structural.composite;
 public class Caixa extends Funcionario{
 	public Caixa (String nomeDoCaixa) {
-        this.nomeFuncionario = nomeDoCaixa;;
+        this.nome = nomeDoCaixa;
+        this.cargo = "caixa";
     }
 
     @Override
     public void printNomeDoFuncionario() {
-        System.out.println(this.nomeFuncionario);
+        System.out.println(this.nome);
     }
 
-	@Override
-	protected void adicionar(Funcionario funcionario) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	protected void remover(Funcionario funcionario) {
-		// TODO Auto-generated method stub
-		
-	}
 }

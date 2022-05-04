@@ -1,13 +1,15 @@
 package structural.composite;
 
 public abstract class Funcionario {
-	String nomeFuncionario;
+	String nome;
+	String cargo;
 
 	public void printNomeDoFuncionario() {
-		System.out.println(this.nomeFuncionario);
+		System.out.println(this.nome);
 	}
 
-	protected abstract void adicionar(Funcionario funcionario);
+	public void printCargoDoFuncionario(){
+		System.out.println(this.cargo);
+	}
 
-	protected abstract void remover(Funcionario funcionario);
 }
