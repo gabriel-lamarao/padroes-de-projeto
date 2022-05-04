@@ -1,25 +1,15 @@
 
 package structural.composite;
 
-import java.util.ArrayList;
-
 public abstract class Supervisor extends Funcionario{
-	ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
 	public Supervisor(String nomeDoSupervisor) {
-		this.nomeFuncionario = nomeDoSupervisor;
+		this.nome = nomeDoSupervisor;
 	}
 
 	@Override
 	public void printNomeDoFuncionario() {
-		System.out.println(this.nomeFuncionario);
+		System.out.println(this.nome);
 	}
 
-	public void adicionar(Funcionario novoFuncionario) {
-		this.funcionarios.add(novoFuncionario);
-	}
-	 
-	public void remover(Supervisor funcionarioAExcluir) {
-		this.funcionarios.remove(funcionarioAExcluir);
-	}
 }
