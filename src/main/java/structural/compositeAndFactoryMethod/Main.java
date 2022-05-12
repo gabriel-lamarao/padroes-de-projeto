@@ -1,4 +1,4 @@
-package structural.composite;
+package structural.compositeAndFactoryMethod;
 
 public class Main {
 	public static void main(String[] args) {

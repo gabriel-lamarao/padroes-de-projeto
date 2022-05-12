@@ -1,5 +1,5 @@
 
-package structural.composite;
+package structural.compositeAndFactoryMethod;
 
 public abstract class Supervisor extends Funcionario{
 

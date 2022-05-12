@@ -1,4 +1,4 @@
-package structural.composite;
+package structural.compositeAndFactoryMethod;
 public class Atendente extends Funcionario{
 	
 	public Atendente (String nomeDoAtendente) {
@@ -10,5 +10,10 @@ public class Atendente extends Funcionario{
     public void printNomeDoFuncionario() {
         System.out.println(this.nome);
      }
+
+    @Override
+    public void printCargoDoFuncionario() {
+
+    }
 
 }

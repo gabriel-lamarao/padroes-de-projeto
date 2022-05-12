@@ -1,4 +1,4 @@
-package structural.composite;
+package structural.compositeAndFactoryMethod;
 
 import java.util.ArrayList;
 import java.util.List;

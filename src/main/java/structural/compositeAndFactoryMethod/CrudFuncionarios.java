@@ -1,6 +1,5 @@
-package structural.composite;
+package structural.compositeAndFactoryMethod;
 
-import java.util.List;
 import java.util.Locale;
 
 public class CrudFuncionarios {
