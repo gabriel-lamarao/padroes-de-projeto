@@ -1,7 +1,7 @@
 package structural.flyweight;
 
 import java.awt.*;
-
+// Contém estado único para cada árvore
 public class Tree {
     private int x;
     private int y;

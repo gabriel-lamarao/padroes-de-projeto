@@ -1,7 +1,7 @@
 package structural.flyweight;
 
 import java.awt.*;
-
+// Contém estado compartilhado por diversas árvores
 public class TreeType {
     private String name;
     private Color color;

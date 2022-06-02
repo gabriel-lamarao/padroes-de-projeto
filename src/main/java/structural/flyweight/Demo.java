@@ -1,9 +1,9 @@
 package structural.flyweight;
 
 import java.awt.*;
-
+// Código cliente
 public class Demo {
-    static int CANVAS_SIZE = 500;
+    static int CANVAS_SIZE = 700;
     static int TREES_TO_DRAW = 1000000;
     static int TREE_TYPES = 2;
 

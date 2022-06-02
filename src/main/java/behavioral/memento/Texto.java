@@ -1,4 +1,4 @@
-package behavioral;
+package behavioral.memento;
 
 public class Texto {
     private String texto;
