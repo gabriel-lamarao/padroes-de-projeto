@@ -6,16 +6,16 @@ public class Cliente {
 	
 		AndroidColleague android = new AndroidColleague(mediador);
 		IOSColleague ios = new IOSColleague(mediador);
-		SymbianColleague symbian = new SymbianColleague(mediador);
+		WindowsColleague windows = new WindowsColleague(mediador);
 	
 		mediador.adicionarColleague(android);
 		mediador.adicionarColleague(ios);
-		mediador.adicionarColleague(symbian);
+		mediador.adicionarColleague(windows);
 		
-		symbian.enviarMensagem("Oi, eu sou um Symbian!");
+		windows.enviarMensagem("Oi, eu sou um Windows!");
 		System.out.println("=========");
-		android.enviarMensagem("Oi Symbian! Eu sou um Android!");
+		android.enviarMensagem("Oi Windows! Eu sou um Android!");
 		System.out.println("=========");
-		ios.enviarMensagem("Olá todos, sou um iOs!");
+		ios.enviarMensagem("Ola todos, sou um iOs!");
 	}
 }

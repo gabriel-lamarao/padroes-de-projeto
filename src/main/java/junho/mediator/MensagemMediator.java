@@ -29,8 +29,8 @@ public class MensagemMediator implements Mediator {
 			System.out.println("Protocolo iOS");
 		} else if (contato instanceof AndroidColleague) {
 			System.out.println("Protocolo Android");
-		} else if (contato instanceof SymbianColleague) {
-			System.out.println("Protocolo Symbian");
+		} else if (contato instanceof WindowsColleague) {
+			System.out.println("Protocolo Windows");
 		}
 	}
 
