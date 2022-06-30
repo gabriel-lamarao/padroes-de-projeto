@@ -1,14 +1,13 @@
 package structural.flyweight;
 
 import java.awt.*;
-
-
+// Código cliente
 public class Demo {
-    static int CANVAS_SIZE = 500;
+    static int CANVAS_SIZE = 700;
     static int TREES_TO_DRAW = 1000000;
     static int TREE_TYPES = 2;
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Forest forest = new Forest();
         for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),

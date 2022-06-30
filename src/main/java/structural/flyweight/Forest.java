@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+// Floresta, que desenhamos
 public class Forest extends JFrame {
     private List<Tree> trees = new ArrayList<>();
 

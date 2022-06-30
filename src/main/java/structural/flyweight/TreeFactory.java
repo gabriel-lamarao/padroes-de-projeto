@@ -3,7 +3,7 @@ package structural.flyweight;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
+// Encapsula a complexidade da criação flyweight das árvores
 public class TreeFactory {
     static Map<String, TreeType> treeTypes = new HashMap<>();
 
